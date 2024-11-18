@@ -1,0 +1,75 @@
+/**
+ * Estilos de la aplicación Tienda
+ * 
+ * Implementa un diseño limpio y moderno con:
+ * - Esquema de colores profesional
+ * - Diseño responsive
+ * - Efectos hover suaves
+ * - Sombras sutiles para profundidad
+ * 
+ * @author mag00s
+ * @version 1.0
+ */
+
+/* Contenedor principal */
+.search-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Tabla de resultados */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.results-table th, 
+.results-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.results-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #374151;
+}
+
+.results-table tr:hover {
+    background: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+/* Formulario de búsqueda */
+.search-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.btn-search {
