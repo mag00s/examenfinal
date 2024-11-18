@@ -1,0 +1,26 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# Redirect all requests to index.php except for existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Set default character encoding
+AddDefaultCharset UTF-8
+
+# Enable PHP short tags
+php_flag short_open_tag on
+
+# Prevent viewing of .htaccess file
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Prevent viewing of .md files
+<Files ~ "\.md$">
+    Header set Content-Type "text/plain"
+    Header set X-Content-Type-Options "nosniff"
+</Files>

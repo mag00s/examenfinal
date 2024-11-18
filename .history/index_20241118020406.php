@@ -7,7 +7,7 @@ class Database {
     private $host = "localhost";
     private $db_name = "tienda";
     private $username = "root";
-    private $password = "root";
+    private $password = "";
     private $conn = null;
 
     public function getConnection() {
