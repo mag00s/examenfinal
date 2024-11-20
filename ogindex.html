@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos</title>
+    <style>
+        :root {
+            --primary: rgb(37, 99, 235);
+            --background: #fff;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: var(--background);
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .title-container img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .links-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #f3f4f6;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .doc-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .note {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f3f4f6;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            color: #4b5563;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        @media (max-width: 640px) {
+            .links-container {
+                flex-direction: column;
+            }
+            
+            .doc-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <span style="font-size: 2rem;">🌱</span>
+            <h1 class="title">Programación Orientada a Objetos</h1>
+        </div>
+
+        <div class="links-container">
+            <a href="README.md" class="doc-link">
+                📖 README
+            </a>
+            <a href="DOCUMENTACION.md" class="doc-link">
+                📑 Documentación
+            </a>
+        </div>
+
+        <div class="note">
+            <p><strong>Nota:</strong> Esta es la documentación del proyecto. Para ejecutar la aplicación completa, necesitas:</p>
+            <ol>
+                <li>Clonar el repositorio</li>
+                <li>Configurar un servidor PHP</li>
+                <li>Importar la base de datos</li>
+                <li>Ejecutar en localhost</li>
+            </ol>
+            <p>Consulta el README para las instrucciones detalladas de instalación.</p>
+        </div>
+    </div>
+</body>
+</html>
